@@ -1,3 +1,7 @@
-def square_array(array)
-  # your code here
+
+def square_array(numbers)
+  collection = Array.new(numbers.length)
+  numbers.each_index { |a| collection[a] = numbers[a] **2  }
+  collection
 end
+
